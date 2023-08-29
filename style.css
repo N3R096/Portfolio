@@ -1,0 +1,123 @@
+:root {
+    font-size: 62.5%;
+    --body-backgroung-color: #252B48;
+    --nav-background-color: rgba(240, 248, 255, 0.387);
+    --nav-ul-li-background-color: rgba(18, 18, 179, 0.327);
+
+    --my-card-background-color: rgb(72, 57, 115);
+    --my-card-text-color:white;
+    --my-card-box-shadow-color: rgb(180, 219, 196);
+    --my-card-border-color:rgba(60, 55, 155, 0.203);
+
+    --heading-text-color: black; 
+    --text-boxes-background-color: rgba(240, 248, 255, 0.097 );
+    --text-boxes-heading-border: rgba(3, 3, 23, 0.569);
+    --text-boxes-article-border:rgb(26, 9, 37);
+    --text-boxes-sub-container-border-color:green;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-backgroung-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+   
+}
+
+nav {background-color: var(--nav-background-color); 
+    width: 100vw;
+    border-bottom: 0.9rem groove;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+    ;
+   
+}
+
+nav ul li {
+    margin: 1rem;
+    font-size: 1.4rem;
+    background-color:var(--nav-ul-li-background-color);
+    transition: ease 1s;
+    box-shadow: 0px 0px 4px 0px rgb(43, 43, 138);
+    transition: 1s ease;
+    border-radius: 15%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 1s ease;
+
+}
+
+nav ul li:hover  {
+    transform: scale(150%);
+}
+
+.my-card {
+    width: 15rem;
+    position: fixed;
+    right: 0;
+    top: 5rem;
+  border-radius: 10%;
+  border: var(--my-card-border-color) groove;
+    background-color: var(--my-card-background-color);
+    color: var(--my-card-text-color);
+   box-shadow: inset 2rem 2rem 5rem 0 var(--my-card-box-shadow-color);
+   text-align: center;
+    
+}
+
+.my-card img {border-radius: 10%;}
+
+main { margin: 15rem 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.t-box-container{
+    margin-bottom: 5rem;
+}
+
+.t-box-container h3 {font-style: italic;
+        font-size: large;
+        border: solid var(--text-boxes-heading-border);
+        border-radius: 45% 45% 0 0;
+        background-color:var(--text-boxes-background-color);}
+
+.t-box {
+    border: var(--text-boxes-article-border) solid;
+    text-align: center;
+    background-color:var(--text-boxes-background-color);
+    border-radius: 0 0 35% 35%;
+    
+}
+
+.t-box p {
+    margin: 5rem;
+}
+
+
+.t-box-sub-container {
+    border:var(--text-boxes-sub-container-border-color) solid;
+}
