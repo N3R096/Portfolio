@@ -15,6 +15,11 @@
     --text-boxes-article-border:rgb(26, 9, 37);
     --text-boxes-sub-container-border-color:green;
 
+    --label-text-color:rgb(66, 142, 117);
+
+    --footer-text-color:rgb(2, 2, 3);
+    --footer-background-color:rgb(63, 11, 128);
+
 }
 
 *{
@@ -42,6 +47,10 @@ nav {background-color: var(--nav-background-color);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+header h1 {font-size: 3rem;
+    font-family: 'Tilt Prism', cursive;
 }
 
 nav ul {
@@ -99,7 +108,8 @@ main { margin: 15rem 15%;
     margin-bottom: 5rem;
 }
 
-.t-box-container h3 {font-style: italic;
+.t-box-container h3 {font-family: 'Black Ops One', cursive;
+
         font-size: large;
         border: solid var(--text-boxes-heading-border);
         border-radius: 45% 45% 0 0;
@@ -120,4 +130,78 @@ main { margin: 15rem 15%;
 
 .t-box-sub-container {
     border:var(--text-boxes-sub-container-border-color) solid;
+    height: 5em;
+    width: 90%;
+   display: flex;
+    margin: auto;
+
+
 }
+.t-box-sub-container div {
+    width: 10rem;
+    height: 4.5rem;
+    border: solid green;
+
+}
+
+.t-box-sub-container p {
+    
+    margin: auto;
+}
+
+.text-2 , .text-3 {
+    height: 25rem;
+}
+
+/* .text-3 .t-box-sub-container {
+   
+} */
+ .text-3 .t-box-sub-container div:hover {
+ transition: 2s ease-in-out  ;   transform: scale(340%);
+    
+ }
+
+ form {display: flex;
+    flex-direction: column;}
+
+label {
+    font-size: 2rem;
+    color:var(--label-text-color);
+}
+
+
+.text-4 {
+    margin-top: 2rem;
+    border-radius: 15% 40%;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+
+
+
+footer {text-align: center;
+    position:fixed;
+    bottom: 0;
+    height: 5%;
+    border:var(--nav-background-color) solid;
+    background-color: var(--my-card-border-color);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem; 
+    border-top: 0.3rem groove;
+     color: var(--footer-text-color);
+    background-color: var(--footer-background-color);
+}
+
+footer a, footer i {
+   color: var(--footer-text-color);
+    text-decoration: none;
+   
+}
+
+footer div {margin: 0 1rem;}
+
+footer i {font-size: 2rem;}
