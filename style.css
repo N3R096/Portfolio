@@ -16,13 +16,16 @@
     --text-boxes-background-color: rgba(240, 248, 255, 0.097 );
     --text-boxes-heading-border: rgba(3, 3, 23, 0.569);
     --text-boxes-article-border:rgb(26, 9, 37);
-    --text-boxes-sub-container-border-color:green;
+    --text-boxes-sub-container-border-color:#5B9A8B;
+    --project-images-border-color:#28564b9c;
 
     --label-text-color:rgb(66, 142, 117);
 
     --footer-text-color:rgb(2, 2, 3);
-    --footer-background-color:rgb(63, 11, 128);
+    --footer-background-color:#445069;
 
+
+    scroll-behavior: smooth;
 }
 
 *{
@@ -133,17 +136,17 @@ main { margin: 15rem 15%;
 
 .t-box-sub-container {
     border:var(--text-boxes-sub-container-border-color) solid;
+    border-radius: 25%;
     height: 5em;
     width: 90%;
    display: flex;
-    margin: auto;
+    margin: 0 auto 1rem;
 
 
 }
 .t-box-sub-container div {
     width: 10rem;
     height: 4.5rem;
-    border: solid green;
 
 }
 
@@ -158,16 +161,24 @@ main { margin: 15rem 15%;
 }
 
 .text-2 , .text-3 {
-    height: 25rem;
+    height: 30rem;
 }
 
-/* .text-3 .t-box-sub-container {
+ .text-3 .t-box-sub-container img {
+    border:var(--project-images-border-color) groove;
+    border-radius: 50%; 
    
-} */
- .text-3 .t-box-sub-container div:hover {
- transition: 2s ease-in-out  ;   transform: scale(340%);
-    
+ 
+} 
+ .text-3 .t-box-sub-container div:hover {transition: transform 2s ease-in-out  ;
+   transform: scale(340%);
+  
  }
+ 
+     
+  
+
+
 
  form {display: flex;
     flex-direction: column;}
@@ -213,3 +224,8 @@ footer a, footer i {
 footer div {margin: 0 1rem;}
 
 footer i {font-size: 2rem;}
+
+
+/* .t-box-container, fieldset {
+    scroll-margin-top:150px ;
+} */
