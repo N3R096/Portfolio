@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submitted Form Data</title>
+</head>
+<body>
+  <h1>Submitted Form Data</h1>
+  <p id="submittedData"></p>
+  <p>Name: <span id="submittedName"></span></p>
+  <p>Email: <span id="submittedEmail"></span></p>
+
+  <script src="script.js"></script>
+  <script>
+    // Get the query string parameters
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const formData = Object.fromEntries(urlSearchParams.entries());
+
+    // Display the submitted data
+    const submittedDataElement = document.getElementById("submittedData");
+    submittedDataElement.textContent = JSON.stringify(formData, null, 2);
+  </script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 :root {font-family: 'Asap Condensed', sans-serif;
     font-family: 'Black Ops One', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
     font-family: 'Raleway', sans-serif;
     font-family: 'Tilt Prism', cursive;
     font-size: 62.5%;
@@ -21,7 +22,7 @@
 
     --label-text-color:rgb(66, 142, 117);
 
-    --footer-text-color:rgb(2, 2, 3);
+    --footer-text-color:rgb(50, 126, 101);
     --footer-background-color:#445069;
 
 
@@ -37,6 +38,7 @@
 body {
     background-color: var(--body-backgroung-color);
 }
+
 
 header {
     position: fixed;
@@ -151,7 +153,9 @@ main { margin: 15rem 15%;
 }
 
 .t-box-sub-container p {
-    
+    border: var(--nav-background-color) groove;
+    width: 65rem;
+    height: 3rem;
     margin: auto;
 }
 
@@ -190,16 +194,18 @@ label {
 
 
 .text-4 {
-    margin-top: 2rem;
+    
     border-radius: 15% 40%;
     width: 80%;
-    margin: 2rem auto;
+    margin: 6rem auto auto;
 }
 
 
 
 
-footer {text-align: center;
+footer { 
+    font-size: 1.5rem;
+    text-align: center;
     position:fixed;
     bottom: 0;
     height: 5%;
@@ -208,8 +214,7 @@ footer {text-align: center;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem; 
+    align-items: center; 
     border-top: 0.3rem groove;
      color: var(--footer-text-color);
     background-color: var(--footer-background-color);
@@ -221,7 +226,8 @@ footer a, footer i {
    
 }
 
-footer div {margin: 0 1rem;}
+footer div {margin: 0 2rem;
+            width: 33%;}
 
 footer i {font-size: 2rem;}
 

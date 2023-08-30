@@ -23,6 +23,16 @@ body
   height: 100vh;
   width: 100vw;
 }
+header {z-index: 1;
+  border: solid green ;
+  position: fixed;
+  background-color: #252B48;
+}
+header a {
+  text-decoration: none;
+  color: #5B9A8B;
+}
+
 .container {
   display: grid;
   grid-template-columns:1fr repeat(3,1fr);
