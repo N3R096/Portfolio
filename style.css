@@ -4,9 +4,10 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Tilt Prism', cursive;
     font-size: 62.5%;
-    --body-backgroung-color: #252B48;
+    /* --body-backgroung-color: #252B48; */
+    --body-background-color: linear-gradient(to left, #252B48 13%, #445069 50%, rgb(66, 142, 117) 75%);
     --nav-background-color: rgba(240, 248, 255, 0.387);
-    --nav-ul-li-background-color: rgba(18, 18, 179, 0.327);
+    --nav-ul-li-background-color: rgba(18, 18, 179, 0.382);
 
     --my-card-background-color: rgb(72, 57, 115);
     --my-card-text-color:white;
@@ -20,7 +21,8 @@
     --text-boxes-sub-container-border-color:#5B9A8B;
     --project-images-border-color:#28564b9c;
 
-    --label-text-color:rgb(66, 142, 117);
+    --label-text-color:rgb(3, 19, 14);
+    --form-btn-color:#4450697f;
 
     --footer-text-color:rgb(50, 126, 101);
     --footer-background-color:#445069;
@@ -36,7 +38,7 @@
 }
 
 body {
-    background-color: var(--body-backgroung-color);
+    background: var(--body-background-color);
 }
 
 
@@ -74,7 +76,7 @@ nav ul li {
     font-size: 1.4rem;
     background-color:var(--nav-ul-li-background-color);
     transition: ease 1s;
-    box-shadow: 0px 0px 4px 0px rgb(43, 43, 138);
+    box-shadow: 0 0 4rem 0 rgb(43, 43, 138);
     transition: 1s ease;
     border-radius: 15%;
 }
@@ -121,13 +123,15 @@ main { margin: 15rem 15%;
         font-size: large;
         border: solid var(--text-boxes-heading-border);
         border-radius: 45% 45% 0 0;
-        background-color:var(--text-boxes-background-color);}
+        background-color:var(--text-boxes-background-color);
+        box-shadow: 0rem 0rem 1rem 0.5rem rgb(3, 8, 3);}
 
 .t-box {
     border: var(--text-boxes-article-border) solid;
     text-align: center;
     background-color:var(--text-boxes-background-color);
     border-radius: 0 0 35% 35%;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgb(3, 8, 3);
     
 }
 
@@ -184,12 +188,17 @@ main { margin: 15rem 15%;
 
 
 
- form {display: flex;
-    flex-direction: column;}
+ form {border: var(--project-images-border-color) groove 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  inset 0em 0rem 1rem 0.3rem  var(--footer-text-color);}
 
 label {
     font-size: 2rem;
     color:var(--label-text-color);
+}
+form button {
+    background-color:var(--form-btn-color);
 }
 
 
