@@ -17,36 +17,36 @@
   });
 
 
-  document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
+//   document.getElementById("myForm").addEventListener("submit", function(event) {
+//     event.preventDefault(); // Prevent the default form submission
   
-    // Get form input values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+//     // Get form input values
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
   
-    // Create a JSON object
-    const formData = {
-      name: name,
-      email: email
-    };
+//     // Create a JSON object
+//     const formData = {
+//       name: name,
+//       email: email
+//     };
   
-    // Convert the JSON object to a query string
-    const queryString = Object.keys(formData).map(key => key + '=' + encodeURIComponent(formData[key])).join('&');
+//     // Convert the JSON object to a query string
+//     const queryString = Object.keys(formData).map(key => key + '=' + encodeURIComponent(formData[key])).join('&');
   
-    // Redirect to submit.html with the query string
-    window.location.href = `submit.html?${queryString}`;
-  });
+//     // Redirect to submit.html with the query string
+//     window.location.href = `submit.html?${queryString}`;
+//   });
   
-  // Get the query string parameters
-const urlParams = new URLSearchParams(window.location.search);
+//   // Get the query string parameters
+// const urlParams = new URLSearchParams(window.location.search);
 
-// Get the name and email values from the query string
-const name = urlParams.get('name');
-const email = urlParams.get('email');
+// // Get the name and email values from the query string
+// const name = urlParams.get('name');
+// const email = urlParams.get('email');
 
-// Display the submitted data on the submit.html page
-const submittedNameElement = document.getElementById("submittedName");
-const submittedEmailElement = document.getElementById("submittedEmail");
+// // Display the submitted data on the submit.html page
+// const submittedNameElement = document.getElementById("submittedName");
+// const submittedEmailElement = document.getElementById("submittedEmail");
 
-submittedNameElement.textContent = name;
-submittedEmailElement.textContent = email;
+// submittedNameElement.textContent = name;
+// submittedEmailElement.textContent = email;
